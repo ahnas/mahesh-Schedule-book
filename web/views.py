@@ -1,11 +1,13 @@
+from django.forms.models import model_to_dict
+from django.http.response import JsonResponse
 from django.shortcuts import render,get_object_or_404
 from django.http import HttpResponse
 from django.urls import reverse
 from django.contrib.auth.decorators import login_required
 import json
 from .forms import AppoinmentForm
-from .models import Award, Banner, Book, Service,Gallery, Update
-
+from .models import Award, Banner, Book, Service,Gallery, Update,doctorAvailable
+import json
 
 def index(request): 
     banner = Banner.objects.all()
@@ -85,6 +87,7 @@ def contact(request):
 def appointment(request):
     appoinmentForm = AppoinmentForm(request.POST or None)
     if request.method == 'POST':
+        print (request.POST)
         if appoinmentForm.is_valid():
             appoinmentForm.save()
             response_data = {
@@ -104,3 +107,10 @@ def appointment(request):
             "appoinmentForm":appoinmentForm,
         }
     return render(request, 'appointment.html',context)
+
+def dateday(request):
+
+    day1 = doctorAvailable.objects.filter(day = request.POST['day']).values()
+    return JsonResponse({"models_to_return": list(day1)})
+
+   

@@ -11,8 +11,9 @@ urlpatterns = [
     path('book/', views.book,name="book"),
     path('gallery/', views.gallery,name="gallery"),
     path('updates/', views.updates,name="updates"),
-    path('contact/', views.contact,name="contact"), 
+    path('contact/', views.contact,name="contact"),  
     path('appointment/', views.appointment,name="appointment"),
     path('updatesingle/<str:slug>', views.updatesingle,name="updatesingle"),
+    path('dateday/', views.dateday,name="dateday"),
     
 ]

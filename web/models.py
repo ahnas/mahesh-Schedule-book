@@ -29,11 +29,11 @@ class doctorAvailable(models.Model):
 
 class Appoinment(models.Model):
 
-    TIME_CHOICES = (('10:30', '10:30'),('11:30', '11:30'))
-    name = models.CharField(max_length=120,blank=True,null=True)
-    phone = models.CharField(max_length=120,blank=True,null=True)
+    
+    name = models.CharField(max_length=120,)
+    phone = models.CharField(max_length=120)
     date = DateField()
-    time = models.CharField(max_length=128,choices=TIME_CHOICES)
+    time = models.CharField(max_length=128)
 
     def __str__(self):
         return str(self.name)
