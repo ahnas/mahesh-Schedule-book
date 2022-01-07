@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html class="no-js" lang="zxx">
+
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="x-ua-compatible" content="ie=edge" />
+        <title>Dr.Mahesh - </title>
+        <meta name="description" content="" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <!-- Favicon -->
+        <link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon.svg" />
+    
+        <!-- Fonts css -->
+        <link href="assets/css/fonts2.css" rel="stylesheet" />
+        <link href="assets/css/fonts3.css" rel="stylesheet" />
+
+    
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+        <!-- LineIcons css -->
+        <link rel="stylesheet" href="assets/css/LineIcons.2.0.css" />
+        <!-- Animate css -->
+        <link rel="stylesheet" href="assets/css/animate.css" />
+        <!-- Tiny-slider css -->
+        <link rel="stylesheet" href="assets/css/tiny-slider.css" />
+        <!--Glightbox  -->
+        <link rel="stylesheet" href="assets/css/glightbox.min.css" />
+        <!-- Main css -->
+        <link rel="stylesheet" href="assets/css/main.css" />
+    </head>
+
+<body>
+  
+
+    <div class="preloader">
+        <div class="preloader-inner">
+            <div class="preloader-icon">
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </div>
+
+
+    <header class="header navbar-area">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-12">
+                    <div class="nav-inner">
+
+                        <nav class="navbar navbar-expand-lg">
+                            <a class="navbar-brand" href="{% url 'web:index' %}">
+                                <img src="assets/images/logo/logo.svg" alt="Logo">
+                            </a>
+                            <button class="navbar-toggler mobile-menu-btn" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                                aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="toggler-icon"></span>
+                                <span class="toggler-icon"></span>
+                                <span class="toggler-icon"></span>
+                            </button>
+                            <div class="collapse navbar-collapse sub-menu-bar" id="navbarSupportedContent">
+                                <ul id="nav" class="navbar-nav ms-auto">
+                                    <li class="nav-item">
+                                        <a class="page-scroll dd-menu collapsed" href="javascript:void(0)"
+                                            data-bs-toggle="collapse" data-bs-target="#submenu-1-1"
+                                            aria-controls="navbarSupportedContent" aria-expanded="false"
+                                            aria-label="Toggle navigation">Home</a>
+                                        <ul class="sub-menu collapse" id="submenu-1-1">
+                                            <li class="nav-item"><a href="{% url 'web:index' %}">Home 1</a></li>
+                                            <li class="nav-item"><a href="index2.html">Home 2</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="page-scroll dd-menu collapsed" href="javascript:void(0)"
+                                            data-bs-toggle="collapse" data-bs-target="#submenu-1-2"
+                                            aria-controls="navbarSupportedContent" aria-expanded="false"
+                                            aria-label="Toggle navigation">Pages</a>
+                                        <ul class="sub-menu collapse" id="submenu-1-2">
+                                            <li class="nav-item"><a href="{% url 'web:profile' %}">About Us</a></li>
+                                            <li class="nav-item"><a href="appointment.html">Appointment</a></li>
+                                            <li class="nav-item"><a href="time-table.html">Time Table</a></li>
+                                            <li class="nav-item"><a href="testimonials.html">Testimonials</a></li>
+                                            <li class="nav-item"><a href="portfolio-details.html">Project Details</a>
+                                            </li>
+                                            <li class="nav-item"><a href="pricing.html">Our Pricing</a></li>
+                                            <li class="nav-item"><a href="registration.html">Sign Up</a></li>
+                                            <li class="nav-item"><a href="login.html">Login</a></li>
+                                            <li class="nav-item"><a href="faq.html">Faq</a></li>
+                                            <li class="nav-item"><a href="mail-success.html">Mail Success</a></li>
+                                            <li class="nav-item"><a href="404.html">404 Error</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="page-scroll dd-menu collapsed" href="javascript:void(0)"
+                                            data-bs-toggle="collapse" data-bs-target="#submenu-1-3"
+                                            aria-controls="navbarSupportedContent" aria-expanded="false"
+                                            aria-label="Toggle navigation">Services</a>
+                                        <ul class="sub-menu collapse" id="submenu-1-3">
+                                            <li class="nav-item"><a href="services.html">Services</a></li>
+                                            <li class="nav-item"><a href="service-single.html">Service Details</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="page-scroll active dd-menu collapsed" href="javascript:void(0)"
+                                            data-bs-toggle="collapse" data-bs-target="#submenu-1-4"
+                                            aria-controls="navbarSupportedContent" aria-expanded="false"
+                                            aria-label="Toggle navigation">Doctors</a>
+                                        <ul class="sub-menu collapse" id="submenu-1-4">
+                                            <li class="nav-item active"><a href="doctors.html">Doctors</a></li>
+                                            <li class="nav-item"><a href="doctor-details.html">Doctor Details</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="page-scroll dd-menu collapsed" href="javascript:void(0)"
+                                            data-bs-toggle="collapse" data-bs-target="#submenu-1-5"
+                                            aria-controls="navbarSupportedContent" aria-expanded="false"
+                                            aria-label="Toggle navigation">Blog</a>
+                                        <ul class="sub-menu collapse" id="submenu-1-5">
+                                            <li class="nav-item"><a href="blog-grid-sidebar.html">Blog Grid Sidebar</a>
+                                            </li>
+                                            <li class="nav-item"><a href="blog-single.html">Blog Single</a></li>
+                                            <li class="nav-item"><a href="blog-single-sidebar.html">Blog Single
+                                                    Sibebar</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="contact.html" aria-label="Toggle navigation">Contact</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="button add-list-button">
+                                <a href="appointment.html" class="btn">Book Appointment</a>
+                            </div>
+                        </nav>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <div class="breadcrumbs overlay">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-8 offset-lg-2 col-md-12 col-12">
+                    <div class="breadcrumbs-content">
+                        <h1 class="page-title">Doctors</h1>
+                    </div>
+                    <ul class="breadcrumb-nav">
+                        <li><a href="{% url 'web:index' %}">Home</a></li>
+                        <li>Doctors</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <section class="doctors section">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="section-title">
+                        <h3>Doctors</h3>
+                        <h2 class="wow fadeInUp" data-wow-delay=".4s">Our Outstanding Team Is Active To Help You!</h2>
+                        <p class="wow fadeInUp" data-wow-delay=".6s">There are many variations of passages of Lorem
+                            Ipsum available, but the majority have suffered alteration in some form.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-3 col-md-6 col-12">
+
+                    <div class="single-doctor wow fadeInUp" data-wow-delay=".2s">
+                        <div class="image">
+                            <img src="assets/images/doctors/doctor1.jpg" alt="#">
+                            <ul class="social">
+                                <li><a href="javascript:void(0)"><i class="lni lni-facebook-filled"></i></a></li>
+                                <li><a href="javascript:void(0)"><i class="lni lni-twitter-original"></i></a></li>
+                                <li><a href="javascript:void(0)"><i class="lni lni-instagram"></i></a></li>
+                                <li><a href="javascript:void(0)"><i class="lni lni-youtube"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="content">
+                            <h5>Cardiologist</h5>
+                            <h3><a href="doctor-details.html">Dr.Felica Queen</a></h3>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-lg-3 col-md-6 col-12">
+
+                    <div class="single-doctor wow fadeInUp" data-wow-delay=".4s">
+                        <div class="image">
+                            <img src="assets/images/doctors/doctor2.jpg" alt="#">
+                            <ul class="social">
+                                <li><a href="javascript:void(0)"><i class="lni lni-facebook-filled"></i></a></li>
+                                <li><a href="javascript:void(0)"><i class="lni lni-twitter-original"></i></a></li>
+                                <li><a href="javascript:void(0)"><i class="lni lni-instagram"></i></a></li>
+                                <li><a href="javascript:void(0)"><i class="lni lni-youtube"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="content">
+                            <h5>Neurologist</h5>
+                            <h3><a href="doctor-details.html">Dr.Alice Williams</a></h3>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-lg-3 col-md-6 col-12">
+
+                    <div class="single-doctor wow fadeInUp" data-wow-delay=".6s">
+                        <div class="image">
+                            <img src="assets/images/doctors/doctor3.jpg" alt="#">
+                            <ul class="social">
+                                <li><a href="javascript:void(0)"><i class="lni lni-facebook-filled"></i></a></li>
+                                <li><a href="javascript:void(0)"><i class="lni lni-twitter-original"></i></a></li>
+                                <li><a href="javascript:void(0)"><i class="lni lni-instagram"></i></a></li>
+                                <li><a href="javascript:void(0)"><i class="lni lni-youtube"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="content">
+                            <h5>Physician Assistant</h5>
+                            <h3><a href="doctor-details.html">Dr.Paul Flavius</a></h3>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-lg-3 col-md-6 col-12">
+
+                    <div class="single-doctor wow fadeInUp" data-wow-delay=".8s">
+                        <div class="image">
+                            <img src="assets/images/doctors/doctor4.jpg" alt="#">
+                            <ul class="social">
+                                <li><a href="javascript:void(0)"><i class="lni lni-facebook-filled"></i></a></li>
+                                <li><a href="javascript:void(0)"><i class="lni lni-twitter-original"></i></a></li>
+                                <li><a href="javascript:void(0)"><i class="lni lni-instagram"></i></a></li>
+                                <li><a href="javascript:void(0)"><i class="lni lni-youtube"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="content">
+                            <h5>Physician Assistant</h5>
+                            <h3><a href="doctor-details.html">Dr.Michael Bean</a></h3>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-lg-3 col-md-6 col-12">
+
+                    <div class="single-doctor wow fadeInUp" data-wow-delay=".2s">
+                        <div class="image">
+                            <img src="assets/images/doctors/doctor1.jpg" alt="#">
+                            <ul class="social">
+                                <li><a href="javascript:void(0)"><i class="lni lni-facebook-filled"></i></a></li>
+                                <li><a href="javascript:void(0)"><i class="lni lni-twitter-original"></i></a></li>
+                                <li><a href="javascript:void(0)"><i class="lni lni-instagram"></i></a></li>
+                                <li><a href="javascript:void(0)"><i class="lni lni-youtube"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="content">
+                            <h5>Cardiologist</h5>
+                            <h3><a href="doctor-details.html">Dr.Felica Queen</a></h3>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-lg-3 col-md-6 col-12">
+
+                    <div class="single-doctor wow fadeInUp" data-wow-delay=".4s">
+                        <div class="image">
+                            <img src="assets/images/doctors/doctor2.jpg" alt="#">
+                            <ul class="social">
+                                <li><a href="javascript:void(0)"><i class="lni lni-facebook-filled"></i></a></li>
+                                <li><a href="javascript:void(0)"><i class="lni lni-twitter-original"></i></a></li>
+                                <li><a href="javascript:void(0)"><i class="lni lni-instagram"></i></a></li>
+                                <li><a href="javascript:void(0)"><i class="lni lni-youtube"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="content">
+                            <h5>Neurologist</h5>
+                            <h3><a href="doctor-details.html">Dr.Alice Williams</a></h3>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-lg-3 col-md-6 col-12">
+
+                    <div class="single-doctor wow fadeInUp" data-wow-delay=".6s">
+                        <div class="image">
+                            <img src="assets/images/doctors/doctor3.jpg" alt="#">
+                            <ul class="social">
+                                <li><a href="javascript:void(0)"><i class="lni lni-facebook-filled"></i></a></li>
+                                <li><a href="javascript:void(0)"><i class="lni lni-twitter-original"></i></a></li>
+                                <li><a href="javascript:void(0)"><i class="lni lni-instagram"></i></a></li>
+                                <li><a href="javascript:void(0)"><i class="lni lni-youtube"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="content">
+                            <h5>Physician Assistant</h5>
+                            <h3><a href="doctor-details.html">Dr.Paul Flavius</a></h3>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-lg-3 col-md-6 col-12">
+
+                    <div class="single-doctor wow fadeInUp" data-wow-delay=".8s">
+                        <div class="image">
+                            <img src="assets/images/doctors/doctor4.jpg" alt="#">
+                            <ul class="social">
+                                <li><a href="javascript:void(0)"><i class="lni lni-facebook-filled"></i></a></li>
+                                <li><a href="javascript:void(0)"><i class="lni lni-twitter-original"></i></a></li>
+                                <li><a href="javascript:void(0)"><i class="lni lni-instagram"></i></a></li>
+                                <li><a href="javascript:void(0)"><i class="lni lni-youtube"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="content">
+                            <h5>Physician Assistant</h5>
+                            <h3><a href="doctor-details.html">Dr.Michael Bean</a></h3>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <footer class="footer overlay">
+
+        <div class="footer-top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 col-md-6 col-12">
+                        <div class="cta">
+                            <h3>Need Help?</h3>
+                            <p>Please feel free to contact our friendly reception staff with any medical enquiry, or
+                                call <a href="tel:123-456-789">123-456-789</a></p>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-12">
+                        <div class="form">
+                            <h3>Subscribe Newsletter</h3>
+                            <form action="#" method="get" target="_blank" class="newsletter-form">
+                                <input name="EMAIL" placeholder="Your email address" type="email">
+                                <div class="button">
+                                   <button class="btn" type="button">
+                                        Subscribe<span class="dir-part"></span>
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="footer-middle">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 col-md-6 col-12">
+
+                        <div class="single-footer f-about">
+                            <div class="logo">
+                                <a href="{% url 'web:index' %}">
+                                    <img src="assets/images/logo/white-logo.svg" alt="#">
+                                </a>
+                            </div>
+                            <p>There’s nothing in this story to make us think he was dreaming about riches.</p>
+                            <ul class="social">
+                                <li><a href="javascript:void(0)"><i class="lni lni-facebook-filled"></i></a></li>
+                                <li><a href="javascript:void(0)"><i class="lni lni-twitter-original"></i></a></li>
+                                <li><a href="javascript:void(0)"><i class="lni lni-instagram"></i></a></li>
+                                <li><a href="javascript:void(0)"><i class="lni lni-linkedin-original"></i></a></li>
+                                <li><a href="javascript:void(0)"><i class="lni lni-youtube"></i></a></li>
+                            </ul>
+                        </div>
+
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-12">
+
+                        <div class="single-footer f-link">
+                            <h3>Useful Links</h3>
+                            <div class="row">
+                                <div class="col-lg-6 col-md-6 col-12">
+                                    <ul>
+                                        <li><a href="{% url 'web:profile' %}">About</a></li>
+                                        <li><a href="doctors.html">Team</a></li>
+                                        <li><a href="services.html">services</a></li>
+                                        <li><a href="pricing.html">Cost Calculator</a></li>
+                                        <li><a href="time-table.html">Working Hours</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-12">
+                                    <ul>
+                                         <li><a href="appointment.html">Appointment</a></li>
+                                        <li><a href="blog-single-sidebar.html">Gallery</a></li>
+                                        <li><a href="time-table.html">Timetable</a></li>
+                                        <li><a href="portfolio-details.html">Details</a></li>
+                                        <li><a href="contact.html">Contact Us</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-12">
+
+                        <div class="single-footer opening-hours">
+                            <h3>Opening Hours</h3>
+                            <ul>
+                                <li>
+                                    <span class="day"><i class="lni lni-timer"></i> Mon - Tue</span>
+                                    <span class="time">08:30 - 18:30</span>
+                                </li>
+                                <li>
+                                    <span class="day"><i class="lni lni-timer"></i> Wed- Thu</span>
+                                    <span class="time">08:30 - 18:30</span>
+                                </li>
+                                <li>
+                                    <span class="day"><i class="lni lni-timer"></i> Friday</span>
+                                    <span class="time">08:30 - 18:30</span>
+                                </li>
+                                <li>
+                                    <span class="day"><i class="lni lni-timer"></i> Saturday</span>
+                                    <span class="time">08:30 - 18:30</span>
+                                </li>
+                            </ul>
+                        </div>
+
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-12">
+
+                        <div class="single-footer last f-contact">
+                            <h3>Contact</h3>
+                            <ul>
+                                <li><i class="lni lni-map-marker"></i>  3909 Witmer Rd, Niagara Falls, NY 14305, United States
+                                </li>
+                                <li>
+                                    <i class="lni lni-phone"></i><a class="color" href="tel:123-456-789">Tel:123-456-789</a> 
+                                </li>
+                                <li><i class="lni lni-envelope"></i> Mail. <a href="mailto:Dr.Mahesh@gmail.com">Dr.Mahesh@gmail.com</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="inner">
+                    <div class="row">
+                        <div class="col">
+                            <div class="content align-center">
+                                <p class="copyright-text">Designed and Developed by <a href="https://gedexo.com" rel="nofollow" target="_blank">Gedexo</a>
+                                </p>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+
+
+    <a href="#" class="scroll-top">
+        <i class="lni lni-chevron-up"></i>
+    </a>
+
+    <!--bootstrap js-->
+    <script src="assets/js/bootstrap.min.js"></script>
+    <!--Wow js -->
+    <script src="assets/js/wow.min.js"></script>
+    <!--Tiny js -->
+    <script src="assets/js/tiny-slider.js"></script>
+    <!-- Glightbox js -->
+    <script src="assets/js/glightbox.min.js"></script>
+    <!-- Count js -->
+    <script src="assets/js/count-up.min.js"></script>
+    <!-- Imagesloaded js -->
+    <script src="assets/js/imagesloaded.min.js"></script>
+    <!-- Isotope js -->
+    <script src="assets/js/isotope.min.js"></script>
+    <!-- Main js -->
+    <script src="assets/js/main.js"></script>
+    <script defer src="../../../static.cloudflareinsights.com/beacon.min.js"
+        data-cf-beacon='{"rayId":"6919142829b83223","version":"2021.8.1","r":1,"token":"93dd3b16eaea413cbf84c7c6b5a1817a","si":10}'></script>
+</body>
+
+</html>

@@ -1,0 +1,86 @@
+{% load static %}
+<header class="header navbar-area style2">
+
+    <div class="top-bar">
+        <div class="container">
+            <div class="inner-topbar">
+                <div class="row">
+                    <div class="col-lg-6 col-md-6 col-12">
+                        <div class="top-contact">
+                            <ul>
+                                <li><i class="lni lni-envelope"></i><a href="mailto:Dr.Mahesh@gmail.com">Dr.Mahesh@gmail.com</a></li>
+                                <li><i class="lni lni-phone"></i> <a class="color" href="tel:123-456-789">Tel:123-456-789</a> </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-12">
+                        <div class="right-content">
+                            <div class="login-button">
+                                <ul>
+                                    <li>
+                                        <a href="login.html"><i class="lni lni-enter"></i> Login</a>
+                                    </li>
+                                    <li>
+                                        <a href="registration.html"><i class="lni lni-user"></i> Register</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="top-social">
+                                <ul>
+                                    <li><a href="javascript:void(0)"><i class="lni lni-facebook-filled"></i></a>
+                                    </li>
+                                    <li><a href="javascript:void(0)"><i class="lni lni-twitter-original"></i></a>
+                                    </li>
+                                    <li><a href="javascript:void(0)"><i class="lni lni-instagram"></i></a></li>
+                                    <li><a href="javascript:void(0)"><i class="lni lni-youtube"></i></a></li>
+                                    <li><a href="javascript:void(0)"><i class="lni lni-pinterest"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-12">
+                <div class="nav-inner">
+
+                    <nav class="navbar navbar-expand-lg">
+                        <a class="navbar-brand" href="{% url 'web:index' %}">
+                            <img src="{% static 'assets/images/logo/logo.svg' %}" alt="Logo">
+                        </a>
+                        <button class="navbar-toggler mobile-menu-btn" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="toggler-icon"></span>
+                            <span class="toggler-icon"></span>
+                            <span class="toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse sub-menu-bar" id="navbarSupportedContent">
+                            <ul id="nav" class="navbar-nav ms-auto">
+                                
+                                
+                                <li class="nav-item"><a href="{% url 'web:index' %}" aria-label="Toggle navigation">Home</a></li>
+                                <li class="nav-item"><a href="{% url 'web:profile' %}" aria-label="Toggle navigation">Profile</a></li>
+                                <li class="nav-item"><a href="{% url 'web:service' %}" aria-label="Toggle navigation">Services</a></li>
+                                <li class="nav-item"><a href="{% url 'web:award' %}" aria-label="Toggle navigation">Awards</a></li> 
+                                <li class="nav-item"><a href="{% url 'web:book' %}" aria-label="Toggle navigation">Books</a></li> 
+                                <li class="nav-item"><a href="{% url 'web:gallery' %}" aria-label="Toggle navigation">Gallery</a></li> 
+                                <li class="nav-item"><a href="{% url 'web:updates' %}" aria-label="Toggle navigation">Updates</a></li> 
+                                <li class="nav-item"><a href="{% url 'web:contact' %}" aria-label="Toggle navigation">Contact</a></li>
+                                
+                            </ul>
+                        </div>
+                        <div class="button add-list-button">
+                            <a href="{% url 'web:appointment' %}" class="btn">Book Appointment</a>
+                        </div>
+                    </nav>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</header>

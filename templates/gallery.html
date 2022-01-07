@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}Awards{% endblock %}
+
+{% block content %}
+
+<div class="breadcrumbs overlay">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-8 offset-lg-2 col-md-12 col-12">
+                <div class="breadcrumbs-content">
+                    <h1 class="page-title">Gallery</h1>
+                </div>
+                <ul class="breadcrumb-nav">
+                    <li><a href="{% url 'web:index' %}">Home</a></li>
+                    <li>Gallery</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+    <div class="container mb-3 mt-3">
+        <div class="row">
+            {% for gallery in gallery %}
+            <div class="col-lg-3 col-md-4 col-sm-6 col-6 pb-3"><img width="100%" src="{{gallery.photo.crop.260x260}}" alt="#"></div>
+            {% endfor %}
+        </div>
+    </div>
+
+{% endblock %}
